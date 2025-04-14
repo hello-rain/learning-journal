@@ -35,6 +35,35 @@ body {
   line-height: 1.5;
 }
 
+/* 3. Components */
+.primary-header {
+  padding: 1em 0;
+}
+
+.nav-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 0.2em;
+}
+
+.nav-list {
+  display: flex;
+  gap: 1.8em;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 0.875rem;
+}
+
+.featured-post {
+  background-color: antiquewhite;
+}
+
 /* 4. Utility Classes */
 
 .container {
