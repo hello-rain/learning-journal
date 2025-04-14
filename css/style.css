@@ -21,6 +21,11 @@ ol[role="list"] {
   list-style: none;
 }
 
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
 /* 2. General Styles */
 
 body {
@@ -31,12 +36,10 @@ body {
 
 /* 3. Components */
 
-
-
 /* 4. Utility Classes */
 
 .container {
-    padding: 0 1.5em;
-    max-width: 1085px;
-    margin-inline: auto;
+  max-width: 1085px;
+  padding: 0 1.5em;
+  margin-inline: auto;
 }
