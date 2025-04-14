@@ -1,0 +1,21 @@
+
+/* 0. Root Properties */
+
+/* 1. Reset  */
+/* 1. Use a more intuitive box-sizing model */
+*, *::before, ::after {
+    box-sizing: border-box;
+}
+
+/* 2. Reset default margin, padding, and font inheritance */
+* {
+    margin: 0;
+    padding: 0;
+    font: inherit;
+}
+
+/* 3. Remove default list styles for elements with a list role */
+ul[role="list"],
+ol[role="list"] {
+  list-style: none;
+}
