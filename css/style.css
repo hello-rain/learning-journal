@@ -20,3 +20,11 @@ ul[role="list"],
 ol[role="list"] {
   list-style: none;
 }
+
+/* 2. General Styles */
+
+body {
+  font-family: "Source Sans 3", sans-serif;
+  color: hsl(0, 0%, 8%);
+  line-height: 1.5;
+}
