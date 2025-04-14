@@ -28,3 +28,15 @@ body {
   color: hsl(0, 0%, 8%);
   line-height: 1.5;
 }
+
+/* 3. Components */
+
+
+
+/* 4. Utility Classes */
+
+.container {
+    padding: 0 1.5em;
+    max-width: 1085px;
+    margin-inline: auto;
+}
