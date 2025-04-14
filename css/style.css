@@ -34,13 +34,12 @@ body {
   line-height: 1.5;
 }
 
-/* 3. Components */
 
 
 /* 4. Utility Classes */
 
 .container {
   max-width: 1085px;
-  padding: 0 2em;
+  padding: 0 1.5em;
   margin-inline: auto;
 }
