@@ -30,6 +30,7 @@ a {
 
 body {
   font-family: "Source Sans 3", sans-serif;
+  font-weight: 700;
   color: hsl(0, 0%, 8%);
   line-height: 1.5;
 }
