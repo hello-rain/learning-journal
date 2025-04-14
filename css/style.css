@@ -34,12 +34,22 @@ body {
   line-height: 1.5;
 }
 
-
-
 /* 4. Utility Classes */
 
 .container {
   max-width: 1085px;
   padding: 0 1.5em;
   margin-inline: auto;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap; /* Prevents text wrapping */
+  border: 0;
 }
