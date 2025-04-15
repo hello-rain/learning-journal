@@ -90,6 +90,46 @@ body {
   }
 }
 
+/* Featured Post */
+.featured-post .container {
+  background-image: url(/learning-journal/images/blog-image-hero-mobile.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 293px;
+  color: hsl(0, 0%, 100%);
+}
+
+.featured-post__content {
+  padding-top: 5em;
+  max-width: 70ch;
+}
+
+.featured-post__date {
+  text-transform: uppercase;
+  font-size: clamp(0.75rem, 2vw, 1rem);
+}
+
+.featured-post__title {
+  font-size: clamp(1.75rem, 4vw, 2.75rem);
+}
+
+.featured-post__desc {
+  font-size: clamp(1rem, 2vw, 1.25rem);
+  line-height: 1.6;
+}
+
+@media (min-width: 1024px) {
+  .featured-post .container {
+    background-image: url(/learning-journal/images/blog-image-hero-desktop.png);
+    height: 488px;
+  }
+
+  .featured-post__content {
+    padding-top: 14em;
+  }
+}
+
 /* 4. Utility Classes */
 
 .container {
