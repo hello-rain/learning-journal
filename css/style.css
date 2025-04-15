@@ -52,6 +52,7 @@ body {
   display: flex;
   align-items: center;
   gap: 0.2em;
+  font-size: clamp(1rem, 2vw, 1.25rem);
 }
 
 .nav-list {
@@ -59,7 +60,13 @@ body {
   gap: 1.8em;
   font-weight: 600;
   text-transform: uppercase;
-  font-size: 0.875rem;
+  font-size: clamp(0.875rem, 2vw, 1rem);
+}
+
+@media (min-width: 1024px) {
+  .nav-list {
+    font-weight: 700;
+  }
 }
 
 /* Featured Post */
@@ -77,16 +84,9 @@ body {
     background-image: url(/learning-journal/images/blog-image-hero-desktop.png);
     height: 488px;
   }
-}
 
-@media (min-width: 1024px) {
-  .logo {
-    font-size: 1.25rem;
-  }
-
-  .nav-list {
-    font-size: 1rem;
-    font-weight: 700;
+  .featured-post__content {
+    padding-top: 14em;
   }
 }
 
