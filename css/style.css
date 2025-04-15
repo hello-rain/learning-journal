@@ -154,11 +154,22 @@ body {
 .recent-posts__view-more {
   display: block;
   margin-inline: auto;
+  margin-bottom: 2em;
   background: none;
   border: none;
   text-decoration: underline;
 }
 
+.primary-footer {
+  background-color: #000000;
+  padding: 2em;
+  color: #ffffff;
+  text-align: center;
+}
+
+.primary-footer div {
+  font-weight: 600;
+}
 /* 4. Utility Classes */
 
 .container {
