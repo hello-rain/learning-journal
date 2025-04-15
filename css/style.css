@@ -62,8 +62,21 @@ body {
   font-size: 0.875rem;
 }
 
-.featured-post {
-  background-color: antiquewhite;
+/* Featured Post */
+.featured-post .container {
+  background-image: url(/learning-journal/images/blog-image-hero-mobile.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 293px;
+  color: hsl(0, 0%, 100%);
+}
+
+@media (min-width: 1024px) {
+  .featured-post .container {
+    background-image: url(/learning-journal/images/blog-image-hero-desktop.png);
+    height: 488px;
+  }
 }
 
 @media (min-width: 1024px) {
