@@ -105,9 +105,10 @@ body {
   max-width: 70ch;
 }
 
-.featured-post__date {
+.featured-post__date,
+.post__date {
   text-transform: uppercase;
-  font-size: clamp(0.75rem, 2vw, 1rem);
+  font-size: clamp(0.875rem, 2vw, 1rem);
 }
 
 .featured-post__title {
@@ -128,6 +129,26 @@ body {
   .featured-post__content {
     padding-top: 14em;
   }
+}
+
+/* Recent Posts */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2em 1.5em;
+  padding: 2em 0;
+}
+
+.post__image {
+  width: 100%;
+}
+
+.post__title {
+  font-size: 1.5rem;
+}
+
+.post__desc {
+  color: hsl(0, 0%, 31%);
 }
 
 /* 4. Utility Classes */
