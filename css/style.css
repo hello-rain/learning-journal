@@ -151,6 +151,14 @@ body {
   color: hsl(0, 0%, 31%);
 }
 
+.recent-posts__view-more {
+  display: block;
+  margin-inline: auto;
+  background: none;
+  border: none;
+  text-decoration: underline;
+}
+
 /* 4. Utility Classes */
 
 .container {
