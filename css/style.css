@@ -39,7 +39,7 @@ body {
 
 /* Header */
 .primary-header {
-  padding: 1em 0;
+  padding: 1em;
 }
 
 .nav-wrapper {
@@ -70,7 +70,7 @@ body {
 }
 
 /* Featured Post */
-.featured-post .container {
+.featured-post {
   background-image: url(/learning-journal/images/blog-image-hero-mobile.png);
   background-size: cover;
   background-position: center;
@@ -80,7 +80,7 @@ body {
 }
 
 @media (min-width: 1024px) {
-  .featured-post .container {
+  .featured-post {
     background-image: url(/learning-journal/images/blog-image-hero-desktop.png);
     height: 488px;
   }
@@ -88,16 +88,6 @@ body {
   .featured-post__content {
     padding-top: 14em;
   }
-}
-
-/* Featured Post */
-.featured-post .container {
-  background-image: url(/learning-journal/images/blog-image-hero-mobile.png);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  height: 293px;
-  color: hsl(0, 0%, 100%);
 }
 
 .featured-post__content {
@@ -121,7 +111,7 @@ body {
 }
 
 @media (min-width: 1024px) {
-  .featured-post .container {
+  .featured-post {
     background-image: url(/learning-journal/images/blog-image-hero-desktop.png);
     height: 488px;
   }
@@ -174,7 +164,7 @@ body {
 
 .container {
   max-width: 1085px;
-  padding: 0 1.5em;
+  padding-left: 1.5em;
   margin-inline: auto;
 }
 
