@@ -35,10 +35,10 @@
       </div>
     </header>
     <main>
-      <section aria-labelledby="featured-post" class="featured-post">
+      <section aria-labelledby="featured-post" class="featured-post" data-section="featured">
         <div class="container">
           <h2 id="featured-post" class="visually-hidden">Featured Post</h2>
-          <article class="featured-post__content">
+          <article class="featured-post__content" data-toggle-detail tabindex="0" role="button">
             <a href="blog.html">
               <time class="featured-post__date" datetime="2025-04-12"
                 >April 12, 2025</time
@@ -54,7 +54,8 @@
           </article>
         </div>
       </section>
-      <section aria-labelledby="recent-posts" class="recent-posts">
+      <section aria-labelledby="post-detail" class="post-detail" data-section="detail"></section>
+      <section aria-labelledby="recent-posts" class="recent-posts" >
         <div class="container">
           <div class="grid">
             <h2 id="recent-posts" class="visually-hidden">Recent Posts</h2>
