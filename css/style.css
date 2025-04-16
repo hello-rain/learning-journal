@@ -64,6 +64,9 @@ body {
 }
 
 @media (min-width: 1024px) {
+  .primary-header .container {
+    padding-right: 0;
+  }
   .nav-list {
     font-weight: 700;
   }
