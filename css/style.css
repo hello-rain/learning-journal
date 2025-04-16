@@ -82,17 +82,6 @@ body {
   color: hsl(0, 0%, 100%);
 }
 
-@media (min-width: 1024px) {
-  .featured-post {
-    background-image: url(/learning-journal/images/blog-image-hero-desktop.png);
-    height: 488px;
-  }
-
-  .featured-post__content {
-    padding-top: 14em;
-  }
-}
-
 .featured-post__content {
   padding-top: 5em;
   max-width: 70ch;
@@ -163,6 +152,13 @@ body {
 .primary-footer div {
   font-weight: 600;
 }
+
+@media (min-width: 1024px) {
+  .grid {
+    padding-top: 3.5em;
+  }
+}
+
 /* 4. Utility Classes */
 
 .container {
