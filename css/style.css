@@ -96,6 +96,15 @@ body {
   gap: 1em;
 }
 
+.featured-post:hover,
+.featured-post:focus {
+  transform: scale(1.01);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: hsl(0, 0%, 100%);
+  transition: transform 0.3s ease, background-color 0.3s ease;
+  cursor: pointer;
+}
+
 .featured-post__date,
 .post__date,
 .post-detail__date {
