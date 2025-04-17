@@ -35,6 +35,12 @@ body {
   line-height: 1.5;
 }
 
+@media (min-width: 1024px) {
+  main {
+    background-color: hsl(0, 0%, 98%);
+  }
+}
+
 /* 3. Components */
 
 /* Header */
@@ -136,7 +142,7 @@ body {
 
 /* Post Detail */
 .post-detail {
-  padding: 3em 0 2em 0;
+  padding: 1em 0 2em 0;
 }
 
 .post-detail__item {
@@ -154,8 +160,8 @@ body {
 }
 
 @media (min-width: 1024px) {
-  main {
-    background-color: hsl(0, 0%, 98%);
+  .post-detail {
+    padding-top: 3em;
   }
 }
 
@@ -180,6 +186,7 @@ body {
 }
 
 #recent-posts-heading {
+  padding-top: 1em;
   text-align: center;
   font-size: clamp(1rem, 2vw, 1.5rem);
 }
