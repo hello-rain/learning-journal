@@ -28,7 +28,7 @@
           <nav>
             <ul aria-label="Primary" role="list" class="nav-list">
               <li><a href="index.html">Home</a></li>
-              <li><a href="index.html" data-nav="about">About Me</a></li>
+              <li><a href="#" data-nav="about">About Me</a></li>
             </ul>
           </nav>
         </div>
@@ -36,15 +36,70 @@
     </header>
     <main>
       <section
+        id="about"
+        class="about page-section"
+        tabindex="-1"
+        aria-labelledby="about-heading"
+        aria-hidden="true"
+        data-page="about"
+      >
+        <div class="container">
+          <h2 id="about-heading" class="visually-hidden">About Me</h2>
+
+          <img
+            src="images/rain.png"
+            alt="Headshot of Rain"
+            class="about__image"
+          />
+
+          <div class="about__header">
+            <h3 class="about__intro">
+              Hi there! My name is Rain and welcome to my learning journal.
+            </h3>
+            <p class="about__paragraph">
+              I'm a self-taught developer, passionate learner, and lifelong
+              explorer of all things tech and creative! This journal is where I
+              document my journey, one breakthrough and bug fix at a time.
+              Whether I’m untangling JavaScript logic or improving my writing
+              skills, every step here is a small win worth celebrating. 🌱
+            </p>
+          </div>
+
+          <!-- Main body content -->
+          <div class="about__body">
+            <p class="about__paragraph">
+              I didn’t take the traditional route into tech. Instead, I dove in
+              headfirst—learning by doing, modeling successful platforms, and
+              building projects that challenge and excite me. From frontend
+              foundations to full-stack flows, I'm all about turning curiosity
+              into real-world skills. My motto? Consistency beats complexity.
+            </p>
+            <p class="about__paragraph">
+              I believe the best way to grow is through hands-on practice,
+              community, and staying curious. That’s why you’ll often find me
+              engaging with fellow learners, reflecting on what works, and
+              adapting as I go. Every mistake is a lesson. Every lesson, a
+              building block.
+            </p>
+            <p class="about__paragraph">
+              Thanks for stopping by. If you’re learning too, I hope this space
+              gives you a spark of inspiration—and reminds you that you don’t
+              need permission to start, just the courage to keep going.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section
         class="featured-post"
-        aria-labelledby="featured-post__heading"
+        aria-labelledby="featured-post-heading"
         aria-controls="post-detail"
         tabindex="0"
         role="link"
         data-section="featured"
       >
         <div class="container">
-          <h2 id="featured-post__heading" class="visually-hidden">
+          <h2 id="featured-post-heading" class="visually-hidden">
             Featured Post
           </h2>
           <div class="featured-post__content">
@@ -65,12 +120,12 @@
         id="post-detail"
         class="post-detail visually-hidden"
         tabindex="-1"
-        aria-labelledby="post-detail__heading"
+        aria-labelledby="post-detail-heading"
         aria-hidden="true"
         data-section="detail"
       >
         <div class="container">
-          <h2 id="post-detail__heading" class="visually-hidden">Post Detail</h2>
+          <h2 id="post-detail-heading" class="visually-hidden">Post Detail</h2>
           <article class="post-detail__item">
             <header class="post-detail__header">
               <time class="post-detail__date" datetime="2025-04-12"
@@ -123,9 +178,9 @@
           </article>
         </div>
       </section>
-      <section class="recent-posts" aria-labelledby="recent-posts__heading">
+      <section class="recent-posts" aria-labelledby="recent-posts-heading">
         <div class="container">
-          <h2 id="recent-posts__heading">Recent Posts</h2>
+          <h2 id="recent-posts-heading">Recent Posts</h2>
           <div class="grid">
             <div class="recent-posts__item">
               <a href="blog.html" class="recent-posts__link">
