@@ -14,5 +14,12 @@ function toggleSections(hideSelector, viewSelector) {
 }
 
 // Init function to add event listeners
+function initPostToggle() {
+  const sectionFeatured = document.querySelector('[data-section="featured"]');
+
+  sectionFeatured.addEventListener("click", () =>
+    toggleSections('[data-section="featured"]', '[data-section="detail"]')
+  );
+}
 
 initPostToggle();
