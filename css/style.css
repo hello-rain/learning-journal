@@ -200,6 +200,13 @@ body {
   text-decoration: underline;
 }
 
+@media (min-width: 1024px) {
+  .grid {
+    padding-top: 3em;
+  }
+}
+
+/* Footer */
 .primary-footer {
   background-color: #000000;
   padding: 2em;
@@ -209,12 +216,6 @@ body {
 
 .primary-footer div {
   font-weight: 600;
-}
-
-@media (min-width: 1024px) {
-  .grid {
-    padding-top: 3em;
-  }
 }
 
 /* 4. Utility Classes */
