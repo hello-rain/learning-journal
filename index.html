@@ -28,7 +28,7 @@
           <nav>
             <ul aria-label="Primary" role="list" class="nav-list">
               <li><a href="index.html">Home</a></li>
-              <li><a href="#">About Me</a></li>
+              <li><a href="index.html" data-nav="about">About Me</a></li>
             </ul>
           </nav>
         </div>
@@ -37,14 +37,14 @@
     <main>
       <section
         class="featured-post"
-        aria-labelledby="featured-post-heading"
+        aria-labelledby="featured-post__heading"
         aria-controls="post-detail"
         tabindex="0"
         role="link"
         data-section="featured"
       >
         <div class="container">
-          <h2 id="featured-post-heading" class="visually-hidden">
+          <h2 id="featured-post__heading" class="visually-hidden">
             Featured Post
           </h2>
           <div class="featured-post__content">
@@ -65,12 +65,12 @@
         id="post-detail"
         class="post-detail visually-hidden"
         tabindex="-1"
-        aria-labelledby="post-detail"
+        aria-labelledby="post-detail__heading"
         aria-hidden="true"
         data-section="detail"
       >
         <div class="container">
-          <h2 id="post-detail-heading" class="visually-hidden">Post Detail</h2>
+          <h2 id="post-detail__heading" class="visually-hidden">Post Detail</h2>
           <article class="post-detail__item">
             <header class="post-detail__header">
               <time class="post-detail__date" datetime="2025-04-12"
@@ -123,9 +123,9 @@
           </article>
         </div>
       </section>
-      <section class="recent-posts" aria-labelledby="recent-posts-heading">
+      <section class="recent-posts" aria-labelledby="recent-posts__heading">
         <div class="container">
-          <h2 id="recent-posts-heading">Recent Posts</h2>
+          <h2 id="recent-posts__heading">Recent Posts</h2>
           <div class="grid">
             <div class="recent-posts__item">
               <a href="blog.html" class="recent-posts__link">
