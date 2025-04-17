@@ -36,18 +36,15 @@
     </header>
     <main>
       <section
-        aria-labelledby="featured-post"
+        aria-labelledby="featured-post-heading"
         class="featured-post"
-        data-section="featured"
+        data-toggle-detail
+        tabindex="0"
+        role="link"
+        aria-controls="post-detail"
       >
         <div class="container">
-          <h2
-            id="featured-post"
-            class="visually-hidden"
-            data-toggle-detail
-            tabindex="0"
-            role="button"
-          >
+          <h2 id="featured-post-heading" class="visually-hidden">
             Featured Post
           </h2>
           <div class="featured-post__content">
@@ -68,9 +65,11 @@
         aria-labelledby="post-detail"
         class="post-detail"
         data-section="detail"
+        id="post-detail"
+        tabindex="-1"
       >
         <div class="container">
-          <h2 id="post-detail" class="visually-hidden">Post Detail</h2>
+          <h2 id="post-detail-heading" class="visually-hidden">Post Detail</h2>
           <article class="post-detail__item">
             <header class="post-detail__header">
               <time class="post-detail__date" datetime="2025-04-12"
@@ -123,9 +122,9 @@
           </article>
         </div>
       </section>
-      <section aria-labelledby="recent-posts" class="recent-posts">
+      <section aria-labelledby="recent-posts-heading" class="recent-posts">
         <div class="container">
-          <h2 id="recent-posts">Recent Posts</h2>
+          <h2 id="recent-posts-heading">Recent Posts</h2>
           <div class="grid">
             <div class="recent-posts__item">
               <a href="blog.html" class="recent-posts__link">
