@@ -139,7 +139,7 @@ body {
 }
 /* Featured Post */
 .featured-post {
-  background-image: url(/learning-journal/images/blog-image-hero-mobile.png);
+  background-image: url(../images/blog-image-hero-mobile.png);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -188,7 +188,7 @@ body {
 
 @media (min-width: 1024px) {
   .featured-post {
-    background-image: url(/learning-journal/images/blog-image-hero-desktop.png);
+    background-image: url(../images/blog-image-hero-desktop.png);
     height: 488px;
   }
 
