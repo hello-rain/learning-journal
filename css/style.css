@@ -69,15 +69,74 @@ body {
   font-size: clamp(0.875rem, 2vw, 1rem);
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 768px) {
   .primary-header .container {
     padding-right: 0;
   }
+
+  .primary-header {
+    padding: 2em 0;
+  }
+
   .nav-list {
     font-weight: 700;
   }
 }
 
+/* About */
+
+.about__header {
+  padding: 1.5em 0 3em 0;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5em;
+}
+
+.about__image {
+  width: 182px;
+  height: 182px;
+  border-radius: 50%;
+  object-fit: cover;
+  display: block;
+}
+
+.about__title,
+.featured-post__title,
+.post-detail__title {
+  line-height: 1.2;
+}
+
+.about__title {
+  padding-bottom: 0.5em;
+  font-size: clamp(2.125rem, 4vw, 3rem);
+}
+
+.about__paragraph,
+.featured-post__desc {
+  font-size: clamp(1rem, 2vw, 1.2rem);
+}
+
+.about__body {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+
+@media (min-width: 768px) {
+  .about__header {
+    flex-direction: row;
+  }
+
+  .about__body {
+    padding: 0 3em;
+  }
+}
+
+@media (min-width: 1024px) {
+  .about__header {
+    padding-top: 5em;
+  }
+}
 /* Featured Post */
 .featured-post {
   background-image: url(/learning-journal/images/blog-image-hero-mobile.png);
@@ -121,11 +180,9 @@ body {
 .featured-post__title,
 .post-detail__title {
   font-size: clamp(1.75rem, 4vw, 2.75rem);
-  line-height: 1.2;
 }
 
 .featured-post__desc {
-  font-size: clamp(1rem, 2vw, 1.25rem);
   line-height: 1.6;
 }
 
@@ -209,13 +266,19 @@ body {
 /* Footer */
 .primary-footer {
   background-color: #000000;
-  padding: 2em;
+  padding: 1em 0;
   color: #ffffff;
   text-align: center;
 }
 
 .primary-footer div {
   font-weight: 600;
+}
+
+@media (min-width: 768px) {
+  .primary-footer {
+    padding: 2em 0;
+  }
 }
 
 /* 4. Utility Classes */
