@@ -230,8 +230,18 @@ body {
   padding: 2em 0;
 }
 
+.recent-posts__item {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3em;
+}
+
 .recent-posts__image {
   width: 100%;
+}
+
+.recent-posts__date {
+  margin-top: 0.5em;
 }
 
 .recent-posts__title {
