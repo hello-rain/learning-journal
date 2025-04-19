@@ -1,25 +1,29 @@
 // Utility: Toggle visibility between sections
-function toggleSections(hideSelector, viewSelector) {
-  const hideEl = document.querySelector(hideSelector);
-  const showEl = document.querySelector(viewSelector);
+function toggleViews(hideEl, showEl) {
+  const hideView = document.querySelector(hideEl);
+  const showView = document.querySelector(showEl);
 
-  if (!hideEl || !showEl) return;
+  if (!hideView || !showView) {
+    console.error("One or both elements not found:", hideEl, showEl);
+    return;
+  }
 
-  hideEl.classList.add("visually-hidden");
-  hideEl.setAttribute("aria-hidden", "true");
+  hideView.classList.add("visually-hidden");
+  hideView.setAttribute("aria-hidden", "true");
 
-  showEl.classList.remove("visually-hidden");
-  showEl.setAttribute("aria-hidden", "false");
-  showEl.focus();
+  showView.classList.remove("visually-hidden");
+  showView.setAttribute("aria-hidden", "false");
+  showView.focus();
 }
 
 // Init function to add event listeners
-function initPostToggle() {
-  const sectionFeatured = document.querySelector('[data-section="featured"]');
+function initViewToggle() {
+  const viewFeatured = document.querySelector('[data-section="featured"]');
+  const viewAbout = document.querySelector('[data-page="about"]');
 
-  sectionFeatured.addEventListener("click", () =>
-    toggleSections('[data-section="featured"]', '[data-section="detail"]')
+  viewFeatured.addEventListener("click", () =>
+    toggleViews('[data-section="featured"]', '[data-section="detail"]')
   );
 }
 
-initPostToggle();
+initViewToggle();
